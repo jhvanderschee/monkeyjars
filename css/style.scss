@@ -117,11 +117,6 @@ html * {max-height:1000000px;}
 html {overflow-y: scroll; overflow-x: hidden; height: 100%;}
 body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
 
-.post .salon {padding-top: 132px; height: 372px!important;}
-.post .salon > div {background: url('/img/interior.jpg') center center no-repeat; background-size: cover; border-bottom: 1px solid #91191e;}
-.page-template .salon, 
-.page-template .salon > div {height: 240px; background-attachment: scroll;}
-
 #splash {display: none; position: fixed; height: 100%; width: 100%; background: #231F20 center 76px; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
 #splash td {vertical-align: middle; text-align: center;}
@@ -142,8 +137,6 @@ body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-
 #menu {background: url(/img/board.jpg) right center no-repeat; background-size: cover; color: white; border-bottom: 1px solid #91191e;}
 #menu > div {background: rgba(33,33,33,0.5);}
 #menu .btn {font-family: 'BrandonGrotesque-Bold'; margin: 0px 15px 15px;}
-
-
 
 .contactinfo {line-height: 1.5em; padding-bottom: 20px;}
 .contactinfo  strong {font-family: 'trackregular'; font-weight: normal; font-size: 14px;}
