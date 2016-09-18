@@ -1,0 +1,14 @@
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+
+permalink: /news/:year/:month/:day/:title/
+
+title: Monkey Jars

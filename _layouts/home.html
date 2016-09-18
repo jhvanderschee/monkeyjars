@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="182" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
+  <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logofullwhite.svg" /></td></tr></table></div>
+  <div id="nonsplash">
+  <script>document.getElementById('nonsplash').style.display = 'none';</script>
+    {% include header.html %}
+    <div id="top" class="intro">
+        <div class="slider">
+          <div id="slide1" class="slide" style="background: url('{{ page.slider[0].image }}') center center no-repeat; background-size: contain;"></div>
+          <div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: contain;"></div>
+          <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: contain;"></div>
+        </div>
+    </div>
+
+
+
+    <div class="light extras" id="aperitivo">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-8 col-md-10">
+                <article>
+                     
+                        <header class="post-header">
+                          <h1 class="post-title">Aperitivo</h1>
+                        </header>
+                      
+                        <div class="post-content"><div class="editable"><p>EVERY THURSDAY: APERITIVO &amp; LIVE MUSIC</p><p>Aperitivo, 'the pre-dinner Drink &amp; Bite', a little something to encourage you to feel hungry, to get the juices flowing, if you will, so you can fully enjoy your upcoming meal. Every Thursday from 18:00 till 20.00 with an open buffet...<br /><a target="_blank" href="/aperitivo">read more &rsaquo;</a></p></div>
+
+                          <div class="row">
+                            <div class="col-md-6"><h2>News</h2><div><p>For all your news updates, blogs and events.<br />{% for post in site.posts limit: 3 %}{{ post.date | date: "%d/%m/%Y" }} - <a href="{{ post.url }}" class="blog">{{ post.title | truncate: 30, "..." }}</a><br />{% endfor %}<a href="/news">read more ›</a></p></div></div>
+                            <div class="col-md-6"><h2>Catering</h2><div class="editable"><p>For a party with family or friends or for a business meeting, you can rely on the catering services that l’Ozio provides for you. We are proud we can organize different kinds of catering in the real Italian style, with a wide choice of dishes both hot and cold.
+We bring to your home or office everything you need for the occasion... <a href="/catering">read more ›</a></p></div></div>
+                          </div>
+
+                        </div>
+
+
+                      
+                </article>
+            </div>
+            <div class="col-lg-2 col-md-1"></div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="light" id="contact">
+      <div class="container">
+      <article>
+        <div class="row">
+            <div class="col-xs-12">
+                
+                        <header class="post-header">
+                          <h1 class="post-title editable">Contact</h1>
+                        </header>
+            </div> 
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8 col-md-9 col-sm-8">                            
+                <div id="map" onclick="window.open('https://www.google.nl/maps/place/Ristorante+l\'Ozio/@52.356636,4.8904422,15z/data=!4m2!3m1!1s0x0:0x5babbc63d9f2f904?sa=X&ved=0ahUKEwj8n6Xa3ZPOAhWCrxoKHQHLCGUQ_BIIfDAK');"></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+
+  <div class="bgimage" id="gallery"><div>
+      <div class="container text-center">
+        <div class="row">
+        {% for image in page.images %}
+          <div class="col-md-2"><a href="{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=ozioamsterdam.com{{ image.image }}&w=180&h=180&t=square" /></a></div>
+        {% endfor %}
+        </div>
+      </div>
+  </div>
+
+<div class="textrow">There is no business, like monkey business</div>
+
+
+   
+
+    {% include footer.html %}
+</div>
+  </body>
+
+</html>
