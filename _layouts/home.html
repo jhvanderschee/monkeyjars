@@ -11,8 +11,8 @@
     <div id="top" class="intro">
         <div class="slider">
           <div id="slide1" class="slide" style="background: url('{{ page.slider[0].image }}') center center no-repeat; background-size: contain;"></div>
-          <div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: contain;"></div>
-          <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: contain;"></div>
+          <!--<div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: contain;"></div>
+          <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: contain;"></div>-->
         </div>
     </div>
 
@@ -142,7 +142,7 @@ Ze telen er niet alleen maar vleesetende planten. Ook in andere mooie grote groe
 
         <div class="row">
         {% for image in page.images %}
-          <div class="col-md-2"><a href="{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=teal-falcon.cloudvent.net{{ image.image }}&w=180&h=180&t=square" /></a></div>
+          <div class="col-md-2"><a href="http://www.instagram.com" target="_blank"><img src="//images.weserv.nl/?url=teal-falcon.cloudvent.net{{ image.image }}&w=180&h=180&t=square" /></a></div>
         {% endfor %}
         </div>
       </div>
