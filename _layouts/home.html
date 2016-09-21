@@ -3,8 +3,8 @@
 
   {% include head.html %}
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="182" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
-  <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logowhite.png" /></td></tr></table></div>
+  <body data-spy="scroll" data-target="#navbar" data-offset="280" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
+  <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logowhite.svg" /></td></tr></table></div>
   <div id="nonsplash">
   <script>document.getElementById('nonsplash').style.display = 'none';</script>
     {% include header.html %}
@@ -21,11 +21,11 @@
       <div class="container">
         <div class="row">
             <div class="col-xs-12 text-left">
-                      <h2 class="post-title editable">Wie is Monkey Jars</h2>
+                      <h2 class="post-title editable">Wat is Monkey Jars?</h2>&nbsp;
             </div> 
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6"><img src="/img/plant.jpg" style="width: 100%;" /></div>
+            <div class="col-lg-6 col-md-6"><img src="/img/tapekaart.png" style="position: absolute; margin-top: -35px; margin-left: 110px;" height="75" /><img src="/img/plant.jpg" style="width: 100%;" /></div>
             <div class="col-lg-6 col-md-6 text-left">
 
 <p><strong>Officieel is Monkey Jars een variëteit van de Nepenthes. Nee,
@@ -42,7 +42,7 @@ Jars in de winkel staat, heeft-ie al twee jaar lang doorgebracht
 in de kas. In de gemiddelde huiskamer overleeft-ie met gemak.
 Zeker als je niet te zuinig omspringt met de gieter.</p>
 
-<p>LEES MEER</p>
+<p><a href="#" style="text-decoration: none; padding: 4px 50px 9px; background: url('/img/tapekaart.png') center center no-repeat; background-size: contain;">LEES MEER</a></p>
 
             </div>
           </div>
@@ -51,6 +51,13 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
 
 
     <div class="light" id="verzorging">
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                      <h2 class="post-title editable">Verzorging</h2>
+            </div> 
+        </div>
+      </div>
       <div class="container" style="padding: 0;">
         <div class="row">
           {% for i in (1..8) %}
@@ -67,6 +74,13 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
 
 
     <div class="light" id="weetjes">
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                      <h2 class="post-title editable">Weetjes</h2>
+            </div> 
+        </div>
+      </div>
       <div class="container" style="padding: 0;">
         <div class="row">
           <div class="col-lg-3 col-md-3" style="padding-left: 8px;"> 
@@ -107,10 +121,11 @@ Ze telen er niet alleen maar vleesetende planten. Ook in andere mooie grote groe
             </div> 
         </div>
         <div class="row" style="padding-top: 10px;">
-            <div class="col-lg-9 col-md-9 col-sm-8">                            
+            <div class="col-lg-9 col-md-9 col-sm-8">   
+                <img src="/img/tapekaart.png" style="position: absolute; margin-top: -35px; margin-left: -150px;" height="75" />                         
                 <div id="map" onclick="window.open('https://www.google.nl/maps/place/Meewisse+VOF+J+M+Plants/@52.2705475,4.716179,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5e75fcb52143f:0x94af0545542deaa0!8m2!3d52.2705475!4d4.7183677');"></div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
+            <div class="col-lg-3 col-md-3 col-sm-4 text-left" style="font-size: 17px; line-height: 1.5em;">{% include contactinfo.html %}</div>
           </div>
       </div>
     </div>
