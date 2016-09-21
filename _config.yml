@@ -9,6 +9,10 @@ defaults:
     values:
       layout: 'post'
 
+collections:
+  facts:
+    output: false
+
 permalink: /news/:year/:month/:day/:title/
 
 title: Monkey Jars
