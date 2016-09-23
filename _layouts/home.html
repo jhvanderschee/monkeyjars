@@ -3,17 +3,34 @@
 
   {% include head.html %}
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="280" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
+  <body data-spy="scroll" data-target="#navbar" data-offset="300" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
   <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logowhite.svg" /></td></tr></table></div>
   <div id="nonsplash">
   <script>document.getElementById('nonsplash').style.display = 'none';</script>
     {% include header.html %}
     <div id="top" class="intro">
-        <div class="slider">
-          <div id="slide1" class="slide" style="text-align: center;"><img src="{{ page.slider[0].image }}" style="max-width: 700px; width: 100%;" /></div>
-          <!--<div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: contain;"></div>
-          <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: contain;"></div>-->
-        </div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="/img/slide1_100q.png" alt="Slide1">
+    </div>
+
+    <div class="item">
+      <img src="/img/slide2_100q.png" alt="Slide2">
+    </div>
+  </div>
+
+</div>
+
+
     </div>
 
 
