@@ -108,7 +108,7 @@ $( document ).ready(function() {
     	var hash = window.location.hash.substring(1);
     	if(hash) {
 	    	var offset = $('#'+hash).offset();
-	    	var scrollto = (offset.top-$( ".navbar-default" ).height()-25); 
+	    	var scrollto = (offset.top-$( ".navbar-default" ).height()-85); 
 			setTimeout(function() {
 				window.scrollTo(0, scrollto);
 			}, 1);
