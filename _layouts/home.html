@@ -10,7 +10,7 @@
     {% include header.html %}
     <div id="top" class="intro">
         <div class="slider">
-          <div id="slide1" class="slide" style="background: url('{{ page.slider[0].image }}') center center no-repeat; background-size: contain;"></div>
+          <div id="slide1" class="slide" style="text-align: center;"><img src="{{ page.slider[0].image }}" style="max-width: 700px; width: 100%;" /></div>
           <!--<div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: contain;"></div>
           <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: contain;"></div>-->
         </div>
@@ -25,7 +25,7 @@
             </div> 
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6"><img src="/img/tapekaart.png" style="position: absolute; margin-top: -35px; margin-left: 110px;" height="75" /><img src="/img/plant.jpg" style="width: 100%;" /></div>
+            <div class="col-lg-6 col-md-6"><img src="/img/tapekaart.png" style="position: absolute; margin-top: -35px; margin-left: 110px;" height="75" /><img src="/img/plant.jpg" style="width: 100%;" /><br />&nbsp;</div>
             <div class="col-lg-6 col-md-6 text-left">
 
 <p><strong>Officieel is Monkey Jars een variëteit van de Nepenthes. Nee,
@@ -42,7 +42,7 @@ Jars in de winkel staat, heeft-ie al twee jaar lang doorgebracht
 in de kas. In de gemiddelde huiskamer overleeft-ie met gemak.
 Zeker als je niet te zuinig omspringt met de gieter.</p>
 
-<p><a href="#" class="readmore">LEES MEER</a></p>
+<p><a href="/over" class="readmore">LEES MEER</a></p>
 
             </div>
           </div>
@@ -61,7 +61,7 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
       <div class="container" style="padding: 0;">
         <div class="row">
           {% for i in (1..8) %}
-            <div class="col-lg-3 col-md-3" style="padding: 0;">
+            <div class="col-md-3 col-sm-4 col-xs-6" style="padding: 0;">
               <div style="background: url(/img/{{ i }}.png) center center no-repeat; background-size: contain; background-blend-mode: screen; height: 300px;"><img src="/img/{{ i }}.svg" style="position: absolute; opacity: 0.85; width: 42%; margin-left: -21%; padding-top: 70px; 
               {% if forloop.index == 2 %}width: 46%; margin-left: -23%; padding-top: 60px;{% endif %}
               {% if forloop.index == 3 %}width: 56%; margin-left: -28%; padding-top: 60px;{% endif %}
@@ -82,16 +82,16 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
             </div> 
         </div>
       </div>
-      <div class="container" style="padding: 0;">
+      <div class="container" style="padding: 0 10px;">
         <div class="row">
-          <div class="col-lg-3 col-md-3" style="padding-left: 8px;"> 
+          <div class="col-lg-3 col-md-3"> 
           {% for fact in site.facts %}
             {% if forloop.index < 5 %}
             <div style="overflow: auto; clear: left; text-align: left;"><div style="font-family: 'Dirty Headline'; font-weight: normal; font-size: 31px; text-align: center; background: url(/img/{{ fact.title }}.png) center center no-repeat; background-size: contain; float: left; width: 60px; height: 100px; padding: 36px 0;">{{ fact.title }}</div><div style="padding-top: 20px; position: relative; right: 0px;">{{ fact.content }}</div></div>
             {% endif %}
           {% endfor %}
           </div>
-          <div class="col-lg-3 col-md-3" style="padding-left: 8px;"> 
+          <div class="col-lg-3 col-md-3" style="padding-left: 0 10px;"> 
           {% for fact in site.facts %}
             {% if forloop.index > 4 %}
             <div style="overflow: auto; clear: left; text-align: left;"><div style="font-family: 'Dirty Headline'; font-weight: normal; font-size: 31px; text-align: center; background: url(/img/{{ fact.title }}.png) center center no-repeat; background-size: contain; float: left; width: 60px; height: 100px; padding: 36px 0;">{{ fact.title }}</div><div style="padding-top: 20px; position: relative; right: 0px;">{{ fact.content }}</div></div>
