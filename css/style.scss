@@ -123,8 +123,8 @@ body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-
 #splash img {width: 75%; max-width: 600px;}
 #nonsplash {background: url('/img/footer.png') center bottom no-repeat; background-size: contain;}
 
-.intro {height:1000px; padding-top: 200px;}
-.slider, .slide {position: absolute; width: 100%; height: 800px;}
+.intro {height:770px; padding-top: 80px;}
+.slider, .slide {position: absolute; width: 100%; height: 690px;}
 
 .light {text-align: center; padding: 30px 0 30px; color: #231F20;}
 .contactinfo a, .light p a {color: #231F20;}
@@ -135,6 +135,10 @@ body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-
 
 .light#over {font-size: 21px; line-height: 1.5em;}
 .light#weetjes {font-size: 17px; line-height: 1.5em;}
+
+.readmore {padding: 5px 71px 13px; font-family: 'Dirty Headline'; text-transform: uppercase; text-decoration: none; 
+background: url('/img/tapekaart.png') center center no-repeat; font-size: 31px; background-size: contain; position: relative; right: 22px; top: 10px;}
+.readmore:hover {color: #3f4717;}
 
 .bgimage > div {padding: 60px 0;}
 
@@ -160,11 +164,11 @@ font-family: 'Dirty Headline'; text-transform: uppercase; font-size: 45px; text-
 .absright > * > img {display: block;}
 
 
-.navbar {border-radius: 0px!important; font-size: 31px; line-height: 1.4em; height: 233px;}
+.navbar {border-radius: 0px!important; font-size: 31px; line-height: 1.4em; height: 193px;}
 .navbar > div {height: 132px;}
 .navbar-default {font-family: 'Dirty Headline'; z-index: 2; position: absolute; width: 100%; background: url(/img/menu.png) center bottom repeat-x; border: 0; text-transform: uppercase;}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {opacity: 1; text-decoration: none; color: #231F20; margin: 58px 20px 0 20px; padding: 4px 0;}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {opacity: 1; text-decoration: none; color: #231F20; margin: 68px 20px 0 20px; padding: 4px 0;}
 .navbar-collapse {-webkit-box-shadow: none; box-shadow: none;}
 .navbar-default .navbar-toggle {margin-top: 25px; margin-bottom: 22px;}
 .navbar-default .navbar-toggle .icon-bar {background-color: #231F20;}
@@ -183,7 +187,7 @@ font-family: 'Dirty Headline'; text-transform: uppercase; font-size: 45px; text-
 .navmenu, .navbar-offcanvas {width: 380px;}
 .navmenu img {width: 140px; margin: 20px 30px 15px;}
 .nav>li>a {padding: 10px 30px;}
-.nav>li>a>img {width: 150px;position: relative; bottom: 75px;}
+.nav>li>a>img {width: 150px;position: relative; bottom: 70px;}
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {color: #3f4717; background: transparent;}
 
