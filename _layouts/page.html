@@ -4,6 +4,8 @@
   {% include head.html %}
 
   <body id="body" class="page-template post" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
+  <div id="nonsplash">
+    <div id="innernonsplash">
 	  {% include header.html %}
 
 
@@ -30,7 +32,8 @@
 
 
     {% include footer.html %}
-
+      </div>
+    </div>
   </body>
 
 </html>
