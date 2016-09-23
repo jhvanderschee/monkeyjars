@@ -54,17 +54,6 @@
 
 /* Brandon Grotesque - Light, Regular, Bold & Black */
 @font-face {
-    font-family: 'BrandonGrotesque-Light';
-    src: url('/fonts/brandongrotesque-light.eot');
-    src: url('/fonts/brandongrotesque-light.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/brandongrotesque-light.woff') format('woff'),
-         url('/fonts/brandongrotesque-light.ttf') format('truetype'),
-         url('/fonts/brandongrotesque-light.svg#brandongrotesque-light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'BrandonGrotesque-Regular';
     src: url('/fonts/brandongrotesque-regular.eot');
     src: url('/fonts/brandongrotesque-regular.eot?#iefix') format('embedded-opentype'),
@@ -82,18 +71,6 @@
          url('/fonts/brandongrotesque-bold.woff') format('woff'),
          url('/fonts/brandongrotesque-bold.ttf') format('truetype'),
          url('/fonts/brandongrotesque-bold.svg#brandongrotesque-bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BrandonGrotesque-Black';
-    src: url('/fonts/brandongrotesque-black.eot');
-    src: url('/fonts/brandongrotesque-black.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/brandongrotesque-black.woff') format('woff'),
-         url('/fonts/brandongrotesque-black.ttf') format('truetype'),
-         url('/fonts/brandongrotesque-black.svg#brandongrotesque-black') format('svg');
-    font-weight: normal;
     font-weight: normal;
     font-style: normal;
 }
@@ -142,8 +119,11 @@ body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-
 .light#contact {}
 
 .readmore {display: inline-block; text-align: center; width: 282px; padding: 7px 71px 13px; font-family: 'Dirty Headline'; text-transform: uppercase; text-decoration: none; 
-background: url('/img/tapekaart.png') center center no-repeat; font-size: 31px; background-size: contain; position: relative; right: 40px; top: 10px;}
+background: url('/img/tapekaart.png') center center no-repeat; font-size: 25px; background-size: contain; position: relative; right: 40px; top: 10px;
+ -ms-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); transform: rotate(-2deg);
+}
 .readmore:hover {color: #3f4717;}
+.readmore:focus {text-decoration: none!important;}
 
 .bgimage > div {padding: 60px 0;}
 
@@ -162,7 +142,7 @@ footer a, footer a:hover, footer a:focus {color: #231F20;}
 footer form {margin: 0 auto; display: inline-block; background: white; overflow: auto; padding: 0;}
 footer form input {padding: 2px 15px; border: 0; display: inline-block; margin: 2px;}
 footer form input[type="email"] {width: 230px; }
-footer form input[type="submit"] {width: 100px; background: #c3ab90; text-transform: uppercase;}
+footer form input[type="submit"] {font-family: 'BrandonGrotesque-Bold'; width: 100px; background: #c3ab90; text-transform: uppercase;}
 .footerbar {color: white; height: 42px; line-height: 35px; background: url('/img/footerbar.png') center center repeat-x; border-top: 3px solid rgba(20,26,0,0.5);}
 .footerbar a {color: white!important;}
 
