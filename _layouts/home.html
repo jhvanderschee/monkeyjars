@@ -77,7 +77,7 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
         </div>
       </div>
       <div class="container" style="padding: 0;">
-        <div class="row">
+        <div class="row" style="margin: 0; overflow: hidden;">
           {% for instruction in site.instructions %}
             <div class="col-md-3 col-sm-4 col-xs-6" style="padding: 0; cursor: pointer;" onclick="window.location.href='/instructions';">
               <div style="background: url(/img/{{ instruction.order }}.png) center center no-repeat; background-size: contain;
@@ -165,26 +165,7 @@ Ze telen er niet alleen maar vleesetende planten. Ook in andere mooie grote groe
     </div>
 
 
-  <div class="bgimage" id="gallery"><div>
-      <div class="container text-center">
-        <div class="row">
-            <div class="col-xs-12 text-left">
 
-                          <h2 class="post-title editable"># monkeyjars</h2>
-            </div> 
-        </div>
-
-        <div class="row" style="padding: 0 10px;">
-        {% for image in page.images %}
-          <div class="col-sm-2 col-xs-4" style="padding: 0 5px;"><a href="https://www.instagram.com/monkey_jars/" target="_blank"><img src="//images.weserv.nl/?url=teal-falcon.cloudvent.net{{ image.image }}&w=180&h=180&t=square" style="width: 100%; margin-bottom: 10px;" /></a></div>
-        {% endfor %}
-        </div>
-      </div>
-  </div></div>
-
-<div class="container text-center">
-<div class="textrow" style="padding:30px 0 120px; line-height: 1.2em;">There is no business, like monkey business</div>
-</div>
 
    
 
