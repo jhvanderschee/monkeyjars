@@ -10,8 +10,13 @@
     <div class="light" style="padding-top: 248px;">
       <div class="container">
         <div class="row">
+            <div class="col-xs-12 text-left">
+                      <h2 class="post-title" style="margin: 0 0 0;">{{ page.title }}</h2>
+            </div> 
+        </div>
+        <div class="row">
           {% for instruction in site.instructions %}
-            <div class="col-lg-3 col-md-4 col-sm-5" style="padding: 0; cursor: pointer;" onclick="window.location.href='/instructions';">
+            <div class="col-lg-3 col-md-4 col-sm-5" style="max-width: 300px; padding: 0; cursor: pointer;" onclick="window.location.href='/instructions';">
               <div style="background: url(/img/{{ instruction.order }}.png) center center no-repeat; background-size: contain;
               {% if instruction.order == 1 %}{% endif %}
               {% if instruction.order == 2 %}-ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg);{% endif %}
@@ -33,7 +38,8 @@
               {% if instruction.order == 8 %}margin: 0 31%; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg);{% endif %}
               "></div></div>
             </div>
-            <div class="col-lg-3 col-md-8 col-sm-7 text-left" style="padding: 30px 0 0 0;">
+            <div class="col-lg-3 col-md-8 col-sm-7 text-left" style="padding: 0 15px; margin-top: -30px;">
+              <br class="hidden-xs" /><br class="hidden-xs" />
                 <h3>{{ instruction.title }}</h3>
                 {{ instruction.content }}
             </div>
