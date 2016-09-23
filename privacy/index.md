@@ -1,5 +1,5 @@
 ---
-title: Privacybeleid
+title: Privacy
 ---
 Deze site maakt gebruik van Google Analytics-cookies. Hiermee verwerken wij de persoonsgegevens van u als websitebezoeker, op basis van artikel 8, onder f, van de Wbp (noodzaak ter behartiging van uw gerechtvaardigd belang). 
 

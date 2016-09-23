@@ -3,16 +3,11 @@ defaults:
       path: ''
     values:
       layout: 'page'
-  - scope:
-      path: ''
-      type: 'posts'
-    values:
-      layout: 'post'
 
 collections:
   facts:
     output: false
-
-permalink: /news/:year/:month/:day/:title/
+  instructions:
+    output: false
 
 title: Monkey Jars
