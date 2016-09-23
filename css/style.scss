@@ -151,6 +151,7 @@ background: url('/img/tapekaart.png') center center no-repeat; font-size: 31px; 
 .contactinfo  strong {font-family: 'Dirty Headline'; font-weight: normal; line-height: 1.3em; font-size: 25px; display: inline-block; padding: 10px 0;}
 b, strong {font-family: 'BrandonGrotesque-Bold'; font-weight: normal;}
 #map {border: 0px solid #231F20; cursor: pointer; height: 335px; background: url('/img/map.jpg') center center no-repeat; background-size: cover; margin-bottom: 0px;}
+#map img {margin-top: 120px; height: 120px; opacity: 0.85;}
 
 footer {}
 footer p {margin: 0;}

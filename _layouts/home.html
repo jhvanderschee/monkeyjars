@@ -79,12 +79,26 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
         <div class="row">
           {% for i in (1..8) %}
             <div class="col-md-3 col-sm-4 col-xs-6" style="padding: 0;">
-              <div style="background: url(/img/{{ i }}.png) center center no-repeat; background-size: contain; background-blend-mode: screen; height: 300px;"><img src="/img/{{ i }}.svg" style="position: absolute; opacity: 0.85; width: 42%; margin-left: -21%; padding-top: 70px; 
-              {% if forloop.index == 2 %}width: 46%; margin-left: -23%; padding-top: 60px;{% endif %}
-              {% if forloop.index == 3 %}width: 56%; margin-left: -28%; padding-top: 60px;{% endif %}
-              {% if forloop.index == 4 %}width: 40%; margin-left: -20%; padding-top: 65px;{% endif %}
-              {% if forloop.index == 5 %}padding-top: 65px;{% endif %}
-              "/></div></div>
+              <div style="background: url(/img/{{ i }}.png) center center no-repeat; background-size: contain;
+              {% if forloop.index == 1 %}{% endif %}
+              {% if forloop.index == 2 %}-ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg);{% endif %}
+              {% if forloop.index == 3 %}{% endif %}
+              {% if forloop.index == 4 %}-ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg);{% endif %}
+              {% if forloop.index == 5 %}-ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg);{% endif %}
+              {% if forloop.index == 6 %}-ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg);{% endif %}
+              {% if forloop.index == 7 %}{% endif %}
+              {% if forloop.index == 8 %}-ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg);{% endif %}
+              ">
+              <div style="background: url(/img/{{ i }}.svg) 50% 45% no-repeat; background-size: contain; opacity: 0.85; padding-top:100%;
+              {% if forloop.index == 1 %}margin: 0 30%;{% endif %}
+              {% if forloop.index == 2 %}margin: 0 28%; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg);{% endif %}
+              {% if forloop.index == 3 %}margin: 0 23%; {% endif %}
+              {% if forloop.index == 4 %}margin: 0 31%; -ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg);{% endif %}
+              {% if forloop.index == 5 %}margin: 0 30%; -ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg);{% endif %}
+              {% if forloop.index == 6 %}margin: 0 30%; -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg);{% endif %}
+              {% if forloop.index == 7 %}margin: 0 30%; {% endif %}
+              {% if forloop.index == 8 %}margin: 0 31%; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg);{% endif %}
+              "></div></div></div>
           {% endfor %}
           </div>
       </div>
@@ -141,7 +155,7 @@ Ze telen er niet alleen maar vleesetende planten. Ook in andere mooie grote groe
         <div class="row" style="padding-top: 10px;">
             <div class="col-lg-9 col-md-9 col-sm-8">   
                 <img class="tapekaart" src="/img/tapekaart.png" style="width: 60%; position: absolute; margin-top: -5vw; margin-left: -30%;" />                         
-                <div id="map" onclick="window.open('https://www.google.nl/maps/place/Meewisse+VOF+J+M+Plants/@52.2705475,4.716179,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5e75fcb52143f:0x94af0545542deaa0!8m2!3d52.2705475!4d4.7183677');"></div>
+                <div id="map" onclick="window.open('https://www.google.nl/maps/place/Meewisse+VOF+J+M+Plants/@52.2705475,4.716179,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5e75fcb52143f:0x94af0545542deaa0!8m2!3d52.2705475!4d4.7183677');"><img src="/img/logo.svg" /></div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 text-left" style="font-size: 17px; line-height: 1.5em;">{% include contactinfo.html %}</div>
           </div>
