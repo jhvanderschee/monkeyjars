@@ -97,7 +97,7 @@ body {color: #231F20; background: #231F20; font-family: 'BrandonGrotesque-Regula
 #splash {display: none; position: fixed; height: 100%; width: 100%; background: #231F20; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
 #splash td {vertical-align: middle; text-align: center;}
-#splash img {width: 75%; max-width: 600px;}
+#splash img {width: 75%; max-width: 600px; margin-top: calc(10vh + 5vw);}
 #nonsplash {background: #f2ecd4 url('/img/muur.jpg') center top;}
 #innernonsplash {background: url('/img/footer.png') center bottom no-repeat; background-size: contain;}
 
