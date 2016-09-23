@@ -127,7 +127,7 @@ body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-
 #myCarousel .item {width: 100%; text-align: center;}
 #myCarousel .item img {margin: 0 auto;}
 
-.carousel-indicators li {margin: 2px; width: 15px; height: 15px; border-color: #876550;}
+.carousel-indicators li {opacity: 0.85; margin: 2px; width: 15px; height: 15px; border-color: #876550;}
 .carousel-indicators li.active {margin: 2px; width: 15px; height: 15px; background-color: #876550;}
 
 .light {text-align: center; padding: 30px 0 30px; color: #231F20;}
