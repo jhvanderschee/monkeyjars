@@ -92,13 +92,14 @@ html * {max-height:1000000px;}
 
 
 html {overflow-y: scroll; overflow-x: hidden; height: 100%;}
-body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 21px; line-height: 1.5em;}
+body {color: #231F20; background: #231F20; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 21px; line-height: 1.5em;}
 
-#splash {display: none; position: fixed; height: 100%; width: 100%; background: #231F20 center 76px; z-index: 99; cursor: pointer;}
+#splash {display: none; position: fixed; height: 100%; width: 100%; background: #231F20; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
 #splash td {vertical-align: middle; text-align: center;}
 #splash img {width: 75%; max-width: 600px;}
-#nonsplash {background: url('/img/footer.png') center bottom no-repeat; background-size: contain;}
+#nonsplash {background: #f2ecd4 url('/img/muur.jpg') center top;}
+#innernonsplash {background: url('/img/footer.png') center bottom no-repeat; background-size: contain;}
 
 .intro {padding-top: 100px;}
 #myCarousel .item {width: 100%; text-align: center;}
