@@ -127,6 +127,7 @@ background: url('/img/tapekaart.png') center center no-repeat; font-size: 23px; 
 .readmore:focus {text-decoration: none!important;}
 
 .bgimage > div {padding: 60px 0;}
+.monkeyjarweetjes {width: 100%; position: relative; bottom: 80px;}
 
 .contactinfo {line-height: 1.5em; padding-bottom: 20px;}
 .contactinfo  strong {font-family: 'Dirty Headline'; font-weight: normal; line-height: 1.3em; font-size: 25px; display: inline-block; padding: 10px 0;}
@@ -271,6 +272,7 @@ label {font-weight: normal;}
   .gallery_images > div a:nth-child(5) {display: none;}
   .navbar {font-size: 31px;}
   .navbar-default .navbar-nav>li>a {margin-left: 16px; margin-right: 16px;}
+  .monkeyjarweetjes {width: 100%; position: relative; bottom: 40px;}
 }
 @media all and (max-width: 991px) {
   form, .twocols .post-content p {padding-right: 0px;}
@@ -282,6 +284,7 @@ label {font-weight: normal;}
   .gallery_images > div a:nth-child(5) {display: none;}
   .navbar {font-size: 25px;}
   .navbar-default .navbar-nav>li>a {margin-left: 8px; margin-right: 8px;}
+  .monkeyjarweetjes {width: 100%; position: relative; bottom: 0px;}
 }
 @media (min-width: 768px) {
   .navbar {text-align: center;}
