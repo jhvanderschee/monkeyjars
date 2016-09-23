@@ -108,7 +108,7 @@ $( document ).ready(function() {
     	var hash = window.location.hash.substring(1);
     	if(hash) {
 	    	var offset = $('#'+hash).offset();
-	    	var scrollto = (offset.top-$( ".navbar-default" ).height()-85); 
+	    	var scrollto = (offset.top-$( ".navbar-default" ).height()-53); 
 			setTimeout(function() {
 				window.scrollTo(0, scrollto);
 			}, 1);
@@ -129,7 +129,7 @@ $( document ).ready(function() {
 		if($('body').hasClass('home') && $(this).attr('href')) {
 			el = $.attr(this, 'href').replace('/','');
 		    $('html, body').animate({
-		        scrollTop: ($( el ).offset().top - 218)
+		        scrollTop: ($( el ).offset().top - 188)
 		    }, 500);
 		    if($('.navmenu.offcanvas').hasClass('in')) $('.navbar-toggle').click();
 		    return false;
