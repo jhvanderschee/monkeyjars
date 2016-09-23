@@ -159,8 +159,8 @@ footer a, footer a:hover, footer a:focus {color: #231F20;}
 .site-footer2 > div:nth-child(1) {padding: 50px 0;}
 footer form {margin: 0 auto; display: inline-block; background: white; overflow: auto; padding: 0;}
 footer form input {padding: 2px 15px; border: 0; display: inline-block; margin: 2px;}
-footer form input[type="email"] {width: 230px;}
-footer form input[type="submit"] {width: 100px;}
+footer form input[type="email"] {width: 230px; }
+footer form input[type="submit"] {width: 100px; background: #c3ab90; text-transform: uppercase;}
 .footerbar {color: white; height: 42px; line-height: 35px; background: url('/img/footerbar.png') center center repeat-x; border-top: 3px solid rgba(20,26,0,0.5);}
 .footerbar a {color: white!important;}
 
