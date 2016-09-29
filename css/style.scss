@@ -54,17 +54,6 @@
 
 /* Brandon Grotesque - Light, Regular, Bold & Black */
 @font-face {
-    font-family: 'BrandonGrotesque-Light';
-    src: url('/fonts/brandongrotesque-light.eot');
-    src: url('/fonts/brandongrotesque-light.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/brandongrotesque-light.woff') format('woff'),
-         url('/fonts/brandongrotesque-light.ttf') format('truetype'),
-         url('/fonts/brandongrotesque-light.svg#brandongrotesque-light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'BrandonGrotesque-Regular';
     src: url('/fonts/brandongrotesque-regular.eot');
     src: url('/fonts/brandongrotesque-regular.eot?#iefix') format('embedded-opentype'),
@@ -82,18 +71,6 @@
          url('/fonts/brandongrotesque-bold.woff') format('woff'),
          url('/fonts/brandongrotesque-bold.ttf') format('truetype'),
          url('/fonts/brandongrotesque-bold.svg#brandongrotesque-bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BrandonGrotesque-Black';
-    src: url('/fonts/brandongrotesque-black.eot');
-    src: url('/fonts/brandongrotesque-black.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/brandongrotesque-black.woff') format('woff'),
-         url('/fonts/brandongrotesque-black.ttf') format('truetype'),
-         url('/fonts/brandongrotesque-black.svg#brandongrotesque-black') format('svg');
-    font-weight: normal;
     font-weight: normal;
     font-style: normal;
 }
@@ -115,68 +92,99 @@ html * {max-height:1000000px;}
 
 
 html {overflow-y: scroll; overflow-x: hidden; height: 100%;}
-body {color: #231F20; background: #f2ecd4 url('/img/muur.jpg') center top; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
+body {color: #231F20; background: #231F20; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 21px; line-height: 1.5em;}
 
-#splash {display: none; position: fixed; height: 100%; width: 100%; background: #231F20 center 76px; z-index: 99; cursor: pointer;}
+#splash {display: none; position: fixed; height: 100%; width: 100%; background: #231F20; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
 #splash td {vertical-align: middle; text-align: center;}
-#splash img {width: 75%; max-width: 600px;}
+#splash img {width: 75%; max-width: 600px; margin-top: calc(9vh + 4vw);}
+#nonsplash {background: #f2ecd4 url('/img/muur.jpg') center top;}
+#innernonsplash {background: url('/img/footer.png') center bottom no-repeat; background-size: contain;}
 
-.intro {height:1000px; padding-top: 200px;}
-.slider, .slide {position: absolute; width: 100%; height: 800px;}
+.intro {padding-top: 100px;}
+#myCarousel .item {width: 100%; text-align: center;}
+#myCarousel .item img {margin: 0 auto;}
 
-.light {text-align: center; padding: 60px 0 40px; color: #231F20;}
+.carousel-indicators li {opacity: 0.85; margin: 2px; width: 15px; height: 15px; border-color: #876550;}
+.carousel-indicators li.active {margin: 2px; width: 15px; height: 15px; background-color: #876550;}
+
+.light {text-align: center; padding: 30px 0 50px; color: #231F20;}
 .contactinfo a, .light p a {color: #231F20;}
 .light .post-content {}
 .light .post-content p {color: #231F20;}
 #catering.light a:not(.blog) {white-space: nowrap; color: #91191e;}
 .light p a.red {color: #91191e;}
 
+.light#over {font-size: 21px; line-height: 1.5em;}
+.light#weetjes {font-size: 17px; line-height: 1.5em; padding-bottom: 0;}
+.light#contact {}
+
+.readmore {display: inline-block; text-align: center; width: 282px; padding: 7px 71px 13px; font-family: 'Dirty Headline'; text-transform: uppercase; text-decoration: none; 
+background: url('/img/tapekaart.png') center center no-repeat; font-size: 23px; background-size: contain; position: relative; right: 40px; top: 10px;
+ -ms-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); transform: rotate(-2deg);
+}
+.readmore:hover {color: #3f4717;}
+.readmore:focus {text-decoration: none!important;}
+
 .bgimage > div {padding: 60px 0;}
+.monkeyjarweetjes {width: 100%; position: relative; bottom: 80px;}
 
 .contactinfo {line-height: 1.5em; padding-bottom: 20px;}
-.contactinfo  strong {font-family: 'Dirty Headline'; font-weight: normal; font-size: 14px;}
+.contactinfo  strong {font-family: 'Dirty Headline'; font-weight: normal; line-height: 1.3em; font-size: 25px; display: inline-block; padding: 10px 0;}
+b, strong {font-family: 'BrandonGrotesque-Bold'; font-weight: normal;}
+#map {border: 0px solid #231F20; cursor: pointer; height: 335px; background: url('/img/map.jpg') center center no-repeat; background-size: cover; margin-bottom: 0px;}
+#map img {margin-top: 120px; height: 120px; opacity: 0.85;}
 
-#map {border: 0px solid #231F20; cursor: pointer; height: 335px; background: url('/img/map.png') center center no-repeat; background-size: cover; margin-bottom: 35px;}
-
+footer {}
 footer p {margin: 0;}
 footer a, footer a:hover, footer a:focus {color: #231F20;}
-.site-footer2 {background: rgba(0,0,0,0.1); text-transform: none!important; font-size: 15px!important; padding: 11px 0 12px!important; max-height: 99999px; letter-spacing: 0px!important;}
+.site-footer2 {background: rgba(63,32,4,0.5); text-transform: none!important; font-size: 15px!important; padding: 11px 0 0!important; max-height: 99999px; letter-spacing: 0px!important;}
 .site-footer2 a, .site-footer2 a:hover, .site-footer2 a:focus {color: #231F20; font-weight: normal; text-decoration: none;}
+.site-footer2 > div:nth-child(1) {padding: 50px 0;}
+footer form {margin: 0 auto; display: inline-block; background: white; overflow: auto; padding: 0;}
+footer form input {padding: 2px 15px; border: 0; display: inline-block; margin: 2px;}
+footer form input[type="email"] {width: 230px; }
+footer form input[type="submit"] {font-family: 'BrandonGrotesque-Bold'; width: 100px; background: #c3ab90; text-transform: uppercase;}
+.footerbar {color: white; height: 42px; line-height: 35px; background: url('/img/footerbar.png') center center repeat-x; border-top: 3px solid rgba(20,26,0,0.5);}
+.footerbar a {color: white!important;}
 
-.textrow {min-height: 46px; line-height: 1.4em;  text-transform: uppercase; text-align: center; padding: 13px 15px; font-size: 13px; font-family: 'Dirty Headline'; text-transform: uppercase; font-size: 50px;}
+.textrow {min-height: 46px; line-height: 1.4em;  text-transform: uppercase; text-align: center; padding: 13px 15px;
+font-family: 'Dirty Headline'; text-transform: uppercase; font-size: 48px; text-shadow: 0px 0px 10px rgba(221,209,193,0.5);}
 
 .absright {width: 200px; float: right; height: 18px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 15px; line-height: 1.5em;}
 .absright > * {float: right; display: block;}
 .absright > * > img {display: block;}
 
-.flag {height: 15px; margin-left: 10px;}
 
-.navbar {border-radius: 0px!important; font-size: 31px; line-height: 1.4em; height: 233px;}
+.navbar {border-radius: 0px!important; font-size: 31px; line-height: 1.4em; height: 163px;}
 .navbar > div {height: 132px;}
 .navbar-default {font-family: 'Dirty Headline'; z-index: 2; position: absolute; width: 100%; background: url(/img/menu.png) center bottom repeat-x; border: 0; text-transform: uppercase;}
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {opacity: 1; text-decoration: none; color: #231F20; margin: 58px 20px 0 20px; padding: 4px 0;}
-.navbar-collapse {-webkit-box-shadow: none; box-shadow: none;}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand {opacity: 1; text-decoration: none; color: #231F20; padding: 4px 0;} 
+.navbar-default .navbar-nav > li >a {opacity: 1; text-decoration: none; color: #231F20; margin: 51px 20px 0 20px; padding: 4px 0;}
+.navbar-default .navbar-nav > li:first-of-type > a {margin-left: 0!important;}
+.navbar-default .navbar-nav > li:last-of-type > a {margin-right: 0!important;}
+.navbar-collapse {-webkit-box-shadow: none; box-shadow: none; padding: 0;}
 .navbar-default .navbar-toggle {margin-top: 25px; margin-bottom: 22px;}
 .navbar-default .navbar-toggle .icon-bar {background-color: #231F20;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {background-color: transparent; opacity: 1;}
 .navbar-default .navbar-toggle {border-color: transparent;}
 .navbar-default .navbar-brand {margin: 5px 0 0;}
-.navbar-default .navbar-brand img {display: block; height: 120px;}
-.page-template .navbar-default, .navbar-default.attop {position: fixed;}
+.navbar-default .navbar-brand img {display: block; width: 115px; position: relative; bottom: 5px;}
+.page-template .navbar-default, .navbar-default.attop {position: fixed; z-index: 98;}
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 0px!important;}
 .navmenu-default {border: 0; background-color: #231F20; border-color: transparent;}
 .navmenu-default .navmenu-nav>li>a {text-decoration: none; color: #fff;}
 .navmenu-default .navmenu-nav>li>a:hover, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, .navmenu-default .navmenu-nav>li>a:focus, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus { color: #fff;;}
 .navmenu-default .navmenu-nav>li.active a, .navmenu-default .navmenu-nav>li.active a:hover {background: transparent; color: white;}
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {color: #231F20;}
-.navmenu-nav {margin-top: 16px; font-size: 18px; line-height: 1.2em;}
-.navmenu, .navbar-offcanvas {width: 380px;}
-.navmenu img {width: 140px; margin: 20px 30px 15px;}
+.navmenu-nav {position: relative; bottom: 30px; margin-top: 0px; font-size: 29px; line-height: 1.2em;}
+.navmenu, .navbar-offcanvas {width: 300px;}
+.navmenu img {width: 115px; margin: 8px 30px 0px;}
 .nav>li>a {padding: 10px 30px;}
-.nav>li>a>img {width: 120px;position: relative; bottom: 70px;}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {color: #91191e; background: transparent;}
+.nav>li>a>img {width: 115px;position: relative; bottom: 50px; left: 3px;}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {color: #3f4717; background: transparent;}
 
 
 .low_height.page-template .navbar-default, 
@@ -186,11 +194,18 @@ footer a, footer a:hover, footer a:focus {color: #231F20;}
 .old_iOS.page-template .navbar-default, 
 .old_iOS .navbar-default.attop {position: absolute;}
 
+<<<<<<< HEAD
 h1, h2 {font-family: 'Dirty Headline'; text-transform: uppercase; font-weight: normal; font-size: 21px; letter-spacing: 1px; margin-bottom: 1.1em; margin-top: 0px;}
 h2 {font-size: 17px;}
 h3 {font-family: 'Dirty Headline'; font-weight: normal; font-size: 21px; text-transform: uppercase; letter-spacing: 2px;}
 
 p {margin-bottom: 1.5em;;}
+=======
+h1, h2 {font-family: 'Dirty Headline'; text-transform: uppercase; font-weight: normal; font-size: 42px; margin-bottom: 30px; margin-top: 0px;}
+h2 {font-size: 42px;}
+h3 {font-family: 'Dirty Headline'; font-weight: normal; font-size: 29px; text-transform: uppercase;}
+.light ul, .light ol, p {margin-bottom: 1.5em;}
+>>>>>>> 06e5b8f02129d80df54ffe688b790b2f4d18b554
 .post-content ul, 
 .post-content ol {margin-bottom: 2em; color: #e6e6e1;}
 .featured-image img {margin-top: 5px; max-width: 100%; border: 1px solid #231F20;}
@@ -263,6 +278,9 @@ label {font-weight: normal;}
   .gallery_images > div a:nth-child(3) {display: inline-block;}
   .gallery_images > div a:nth-child(4) {display: inline-block;}
   .gallery_images > div a:nth-child(5) {display: none;}
+  .navbar {font-size: 31px;}
+  .navbar-default .navbar-nav>li>a {margin-left: 16px; margin-right: 16px;}
+  .monkeyjarweetjes {width: 100%; position: relative; bottom: 40px;}
 }
 @media all and (max-width: 991px) {
   form, .twocols .post-content p {padding-right: 0px;}
@@ -272,10 +290,14 @@ label {font-weight: normal;}
   .gallery_images > div a:nth-child(3) {display: inline-block;}
   .gallery_images > div a:nth-child(4) {display: none;}
   .gallery_images > div a:nth-child(5) {display: none;}
+  .navbar {font-size: 25px;}
+  .navbar-default .navbar-nav>li>a {margin-left: 8px; margin-right: 8px;}
+  .monkeyjarweetjes {width: 100%; position: relative; bottom: 0px;}
 }
 @media (min-width: 768px) {
   .navbar {text-align: center;}
   .navbar-nav {float: none; display: inline-block; margin: 0 auto;}
+  .tapekaart {margin-top: -25px!important; max-width: 300px;}
 }
 @media all and (max-width: 767px) {
   .navbar-default .navbar-collapse {background: #231F20; border: none;}

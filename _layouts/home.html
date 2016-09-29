@@ -3,17 +3,35 @@
 
   {% include head.html %}
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="182" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
-  <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logowhite.png" /></td></tr></table></div>
+  <body data-spy="scroll" data-target="#navbar" data-offset="300" class="home" onload="">
+  <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logowhite.svg" /></td></tr></table></div>
   <div id="nonsplash">
+    <div id="innernonsplash">
   <script>document.getElementById('nonsplash').style.display = 'none';</script>
     {% include header.html %}
     <div id="top" class="intro">
-        <div class="slider">
-          <div id="slide1" class="slide" style="background: url('{{ page.slider[0].image }}') center center no-repeat; background-size: contain;"></div>
-          <div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: contain;"></div>
-          <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: contain;"></div>
-        </div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for image in page.slider %}
+    <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.index0 == 0 %}active{% endif %}"></li>
+    {% endfor %}
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    {% for image in page.slider %}
+    <div class="item {% if forloop.index0 == 0 %}active{% endif %}">
+      <img src="{{ image.image }}" />
+    </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+
+
     </div>
 
 
@@ -21,11 +39,11 @@
       <div class="container">
         <div class="row">
             <div class="col-xs-12 text-left">
-                      <h2 class="post-title editable">Wie is Monkey Jars</h2>
+                      <h2 class="post-title" style="margin: 0 0 35px;">Wat is Monkey Jars?</h2>
             </div> 
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6"><img src="/img/plant.jpg" style="width: 100%;" /></div>
+            <div class="col-lg-6 col-md-6"><img class="tapekaart" src="/img/tapekaart.png" style="width: 60%; position: absolute; margin-top: -5vw; margin-left: 30%;" /><img src="/img/plant.jpg" style="width: 100%;" /><br />&nbsp;</div>
             <div class="col-lg-6 col-md-6 text-left">
 
 <p><strong>Officieel is Monkey Jars een variëteit van de Nepenthes. Nee,
@@ -42,7 +60,7 @@ Jars in de winkel staat, heeft-ie al twee jaar lang doorgebracht
 in de kas. In de gemiddelde huiskamer overleeft-ie met gemak.
 Zeker als je niet te zuinig omspringt met de gieter.</p>
 
-<p>LEES MEER</p>
+<p><a href="/over" class="readmore">LEES MEER</a></p>
 
             </div>
           </div>
@@ -51,15 +69,38 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
 
 
     <div class="light" id="verzorging">
-      <div class="container" style="padding: 0;">
+      <div class="container">
         <div class="row">
-          {% for i in (1..8) %}
-            <div class="col-lg-3 col-md-3" style="padding: 0;"><div style="background: url(/img/{{ i }}.png) center center no-repeat; background-size: 130%; background-blend-mode: screen; height: 300px;"><img src="/img/{{ i }}.svg" style="position: absolute; opacity: 0.85; width: 42%; margin-left: -21%; padding-top: 40px; 
-              {% if forloop.index == 2 %}width: 46%; margin-left: -23%;{% endif %}
-              {% if forloop.index == 3 %}width: 56%; margin-left: -28%;{% endif %}
-              {% if forloop.index == 4 %}width: 40%; margin-left: -20%; padding-top: 55px;{% endif %}
-              {% if forloop.index == 5 %}padding-top: 60px;{% endif %}
-              "/></div></div>
+            <div class="col-xs-12 text-left">
+                      <h2 class="post-title editable" style="margin: 0;">Verzorging</h2>
+            </div> 
+        </div>
+      </div>
+      <div class="container" style="padding: 0;">
+        <div class="row" style="margin: 0; overflow: hidden;">
+          {% for instruction in site.instructions %}
+            <div class="col-md-3 col-sm-4 col-xs-6" style="padding: 0; cursor: pointer;" onclick="window.location.href='/instructions';">
+              <div style="background: url(/img/{{ instruction.order }}.png) center center no-repeat; background-size: contain;
+              {% if instruction.order == 1 %}{% endif %}
+              {% if instruction.order == 2 %}-ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg);{% endif %}
+              {% if instruction.order == 3 %}{% endif %}
+              {% if instruction.order == 4 %}-ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg);{% endif %}
+              {% if instruction.order == 5 %}-ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg);{% endif %}
+              {% if instruction.order == 6 %}-ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg);{% endif %}
+              {% if instruction.order == 7 %}{% endif %}
+              {% if instruction.order == 8 %}-ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg);{% endif %}
+              ">
+              <div style="background: url(/img/{{ instruction.order }}.svg) 50% 46% no-repeat; background-size: contain; opacity: 0.85; padding-top:100%;
+              {% if instruction.order == 1 %}margin: 0 30%;{% endif %}
+              {% if instruction.order == 2 %}margin: 0 28%; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg);{% endif %}
+              {% if instruction.order == 3 %}margin: 0 23%; {% endif %}
+              {% if instruction.order == 4 %}margin: 0 31%; -ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg);{% endif %}
+              {% if instruction.order == 5 %}margin: 0 30%; -ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg);{% endif %}
+              {% if instruction.order == 6 %}margin: 0 30%; -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg);{% endif %}
+              {% if instruction.order == 7 %}margin: 0 30%; {% endif %}
+              {% if instruction.order == 8 %}margin: 0 31%; -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg);{% endif %}
+              "></div></div>
+            </div>
           {% endfor %}
           </div>
       </div>
@@ -67,24 +108,36 @@ Zeker als je niet te zuinig omspringt met de gieter.</p>
 
 
     <div class="light" id="weetjes">
-      <div class="container" style="padding: 0;">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-3" style="padding-left: 8px;"> 
+            <div class="col-xs-12 text-left">
+                      <h2 class="post-title" style="margin: 0 0 10px;">Weetjes</h2>
+            </div> 
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3"> 
           {% for fact in site.facts %}
             {% if forloop.index < 5 %}
-            <div style="overflow: auto; clear: left; text-align: left;"><div style="font-family: 'Dirty Headline'; font-weight: normal; font-size: 31px; text-align: center; background: url(/img/{{ fact.title }}.png) center center no-repeat; background-size: contain; float: left; width: 100px; height: 100px; padding: 30px 0;">{{ fact.title }}</div><div style="padding-top: 20px; position: relative; right: 10px;">{{ fact.content }}</div></div>
+            <div style="overflow: auto; clear: left; text-align: left;">
+              <div style="font-family: 'Dirty Headline'; font-weight: normal; font-size: 31px; text-align: center; background: url(/img/{{ fact.title }}.png) center center no-repeat; background-size: contain; float: left; width: 60px; height: 100px; padding: 36px 0; position: relative; right: 5px;">{{ fact.title }}</div>
+              <div style="padding-top: 20px; position: relative; right: 5px;">{{ fact.content }}</div>
+            </div>
             {% endif %}
           {% endfor %}
           </div>
-          <div class="col-lg-3 col-md-3" style="padding-left: 8px;"> 
+          <div class="col-lg-3 col-md-3" style="padding-left: 0 10px;"> 
           {% for fact in site.facts %}
             {% if forloop.index > 4 %}
-            <div style="overflow: auto; clear: left; text-align: left;"><div style="font-family: 'Dirty Headline'; font-weight: normal; font-size: 31px; text-align: center; background: url(/img/{{ fact.title }}.png) center center no-repeat; background-size: contain; float: left; width: 100px; height: 100px; padding: 30px 0;">{{ fact.title }}</div><div style="padding-top: 20px; position: relative; right: 10px;">{{ fact.content }}</div></div>
+            <div style="overflow: auto; clear: left; text-align: left;">
+              <div style="font-family: 'Dirty Headline'; font-weight: normal; font-size: 31px; text-align: center; background: url(/img/{{ fact.title }}.png) center center no-repeat; background-size: contain; float: left; width: 60px; height: 100px; padding: 36px 0; position: relative; right: 5px;">{{ fact.title }}</div>
+              <div style="padding-top: 20px; position: relative; right: 5px;">{{ fact.content }}</div></div>
             {% endif %}
           {% endfor %}
           </div>
           <div class="col-lg-6 col-md-6"> 
-            <img src="{{ page.slider[0].image }}" style="width: 100%;" />
+            <img class="monkeyjarweetjes" src="/img/monkeyjars_weetjes.png" />
           </div>
         </div>
       </div>
@@ -107,35 +160,17 @@ Ze telen er niet alleen maar vleesetende planten. Ook in andere mooie grote groe
             </div> 
         </div>
         <div class="row" style="padding-top: 10px;">
-            <div class="col-lg-9 col-md-9 col-sm-8">                            
-                <div id="map" onclick="window.open('https://www.google.nl/maps/place/Meewisse+VOF+J+M+Plants/@52.2705475,4.716179,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5e75fcb52143f:0x94af0545542deaa0!8m2!3d52.2705475!4d4.7183677');"></div>
+            <div class="col-lg-9 col-md-9 col-sm-8">   
+                <img class="tapekaart" src="/img/tapekaart.png" style="width: 60%; position: absolute; margin-top: -5vw; margin-left: -30%;" />                         
+                <div id="map" onclick="window.open('https://www.google.nl/maps/place/Meewisse+VOF+J+M+Plants/@52.2705475,4.716179,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5e75fcb52143f:0x94af0545542deaa0!8m2!3d52.2705475!4d4.7183677');"><img src="/img/logo.svg" /></div>&nbsp;
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
+            <div class="col-lg-3 col-md-3 col-sm-4 text-left" style="font-size: 17px; line-height: 1.5em;">{% include contactinfo.html %}</div>
           </div>
       </div>
     </div>
 
 
-  <div class="bgimage" id="gallery"><div>
-      <div class="container text-center">
-        <div class="row">
-            <div class="col-xs-12 text-left">
 
-                          <h2 class="post-title editable"># monkeyjars</h2>
-            </div> 
-        </div>
-
-        <div class="row">
-        {% for image in page.images %}
-          <div class="col-md-2"><a href="{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=teal-falcon.cloudvent.net{{ image.image }}&w=180&h=180&t=square" /></a></div>
-        {% endfor %}
-        </div>
-      </div>
-  </div></div>
-
-<div class="container text-center">
-<div class="textrow">There is no business, like monkey business</div>
-</div>
 
    
 

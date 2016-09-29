@@ -2,13 +2,5 @@
 layout: home
 slider:
   - image: /img/slide1.png
-  - image: /img/slide1.png
-  - image: /img/slide1.png
-images:
-  - image: /img/pics/1.png
-  - image: /img/pics/2.png
-  - image: /img/pics/3.png
-  - image: /img/pics/4.png
-  - image: /img/pics/5.png
-  - image: /img/pics/6.png
+  - image: /img/slide2.png
 ---

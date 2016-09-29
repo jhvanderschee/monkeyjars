@@ -1,19 +1,13 @@
 <div id="wrapall">
-<script>
-if(getParameterByName('url')) {
-    document.getElementById('wrapall').style.display='none';
-}
-</script>
 <header id="header" class="home">
       <nav class="navbar navbar-default attop" role="navigation"><div>
-      <div class="textrow"><div><div class="absright">Choose language</div></div></div>
+      <div class="textrow" style="position: absolute; width: 100%; display: none;"><div class="container"><div class="absright">Choose language</div></div></div>
         <div class="container">
 
 
 <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
-      <img src="/img/logo.png">
+      <img src="/img/logowhite.svg" onclick="window.location.href='/';">
       <ul class="nav navmenu-nav">
-              <li><a href="/#top">Home</a></li>
               <li><a href="/#over">Over</a></li>
               <li><a href="/#verzorging">Verzorging</a></li>
               <li><a href="/#weetjes">Weetjes</a></li>
@@ -30,7 +24,7 @@ if(getParameterByName('url')) {
             </button>
 
             <a class="navbar-brand text-center visible-xs" href="/#top" style="float: none; text-align: center;">
-              <img src="/img/logo.png" style="display: inline-block;">
+              <img src="/img/logo.svg" style="display: inline; opacity: 0.80;" />
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -38,7 +32,7 @@ if(getParameterByName('url')) {
               <li><a href="#top">Home</a></li>
               <li><a href="#over">Over</a></li>
               <li><a href="#verzorging">Verzorging</a></li>
-              <li><a href="#top"><img src="/img/logo.svg"></a></li>
+              <li><a href="#top"><img src="/img/logo.svg" style="opacity: 0.80;" /></a></li>
               <li><a href="#weetjes">Weetjes</a></li>
               <li><a href="/verkoop">Verkoop</a></li>
               <li><a href="#contact">Contact</a></li>
