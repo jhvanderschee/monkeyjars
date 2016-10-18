@@ -149,6 +149,7 @@ footer form input[type="submit"] {font-family: 'BrandonGrotesque-Bold'; width: 1
 .footerbar a {color: white!important;}
 
 #header .textrow {z-index: 99;}
+#header .textrow .container {padding: 0;}
 .textrow {min-height: 46px; line-height: 1.4em;  text-transform: uppercase; text-align: center; padding: 13px 15px;
 font-family: 'Dirty Headline'; text-transform: uppercase; font-size: 48px; text-shadow: 0px 0px 10px rgba(221,209,193,0.5);}
 .absright {width: 300px; float: right; text-align: right; height: 18px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 15px; line-height: 1.5em;}
