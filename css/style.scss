@@ -151,8 +151,8 @@ footer form input[type="submit"] {font-family: 'BrandonGrotesque-Bold'; width: 1
 .textrow {min-height: 46px; line-height: 1.4em;  text-transform: uppercase; text-align: center; padding: 13px 15px;
 font-family: 'Dirty Headline'; text-transform: uppercase; font-size: 48px; text-shadow: 0px 0px 10px rgba(221,209,193,0.5);}
 
-.absright {width: 300px; float: right; height: 18px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 15px; line-height: 1.5em;}
-.absright > * {text-align: right; display: inline-block;}
+.absright {width: 300px; float: right; text-align: right; height: 18px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 15px; line-height: 1.5em;}
+.absright > * {display: inline-block;}
 
 
 .navbar {border-radius: 0px!important; font-size: 31px; line-height: 1.4em; height: 163px;}
