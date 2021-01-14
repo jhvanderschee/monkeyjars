@@ -267,8 +267,11 @@ label {font-weight: normal;}
 .row.instructions { display: flex; flex-wrap: wrap; justify-content: center; width: 106%;}
 .row.instructions > div {margin-top: 2rem;}
 .row.instructions > p {width: 100%;}
+.row.instructions > p .readmore {width: 340px; font-size: 20px;}
+.row.instructions > p .readmore:nth-of-type(2) {transform: rotate(2deg); margin-left:-8rem;}
 
-.weetjes #weetjes { margin-top: 15rem; }
+.readmore.vragen {width: 340px; font-size: 20px;}
+.weetjes #faq { margin-top: 10rem; }
 
 ul.accordion {position: relative; margin:0.5rem 0 2rem; padding-bottom: 0; padding-left: 0; max-width: 80rem;}
 ul.accordion li {border-bottom: 1px solid rgba(0,0,0,0.25); list-style: none; margin-left: 0;}
