@@ -2,7 +2,7 @@
 title: Weetjes
 layout: weetjes
 oorsprong:
-  - title: Waar kom je vandaan?
+  - title: Waar kom ik vandaan?
     content: >-
       Van oorsprong kom ik uit het tropisch regenwoud van Borneo en omstreken.
       Daar kan het flink regenen! Daarom houd ik ook van veel water en een hoge
