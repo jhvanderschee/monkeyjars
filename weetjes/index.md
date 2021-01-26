@@ -7,7 +7,7 @@ oorsprong:
       Van oorsprong kom ik uit het tropisch regenwoud van Borneo en omstreken.
       Daar kan het flink regenen! Daarom houd ik ook van veel water en een hoge
       luchtvochtigheid.
-  - title: Weet je waar ik oorspronkelijk groei?
+  - title: Waar groei je in de natuur?
     content: >-
       In de natuur groei ik tussen de bomen in de jungle. Voor mij een ideale
       plek, omdat mijn voedsel bestaat uit kleine vliegjes en insecten. Ik lok
