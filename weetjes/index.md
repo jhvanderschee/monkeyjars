@@ -37,7 +37,7 @@ water_geven:
       ik sta niet te droog is, dan vul ik mijn beker gewoon zelf met een laagje
       water. Afhankelijk van mijn soort vul ik mijn beker tot 1/3e, maar dat
       hoeft niet altijd zo te zijn.
-  - title: Hoe komt het dat mijn bekers bruin worden?
+  - title: Hoe komt het dat jouw bekers bruin worden?
     content: >-
       Als mijn bekers bruin worden is er iets mis. Meestal heb ik dan te weinig
       water gekregen of sta ik op een plek die te droog of te licht voor mij is.
