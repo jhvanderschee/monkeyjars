@@ -25,7 +25,7 @@ oorsprong:
       water uit mijn beker. Vandaar de naam ‘Monkey Jars’. Ik word ook wel
       ‘bekerplant’ genoemd. Maar jij mag ‘Monkey Jars’ zeggen ;-).
 water_geven:
-  - title: Mag ik mee onder de douche?
+  - title: Mag ik je meenemen onder de douche?
     content: >-
       Ja, dat vind ik beregezellig. Niet te vaak en je hoeft me niet in te
       zepen, daar krijg ik een beetje jeuk van. Ik vind het ook heerlijk om in
