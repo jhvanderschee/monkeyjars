@@ -30,7 +30,7 @@ water_geven:
       Ja, dat vind ik beregezellig. Niet te vaak en je hoeft me niet in te
       zepen, daar krijg ik een beetje jeuk van. Ik vind het ook heerlijk om in
       een vochtige badkamer rond te hangen!
-  - title: Moet ik echt water in de bekers doen?
+  - title: Moet ik echt water in jouw bekers doen?
     content: >-
       Nee, als je mij goed verzorgt hoeft dat niet. Mijn stengels kun je zien
       als een natuurlijke gieter. Als je me genoeg water geeft en de plek waar
