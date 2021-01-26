@@ -68,7 +68,7 @@ plaats:
       Net als in de jungle houd ik van een lichte plek, maar ik kan niet tegen
       direct zonlicht. In warme zomermaanden vind ik het heerlijk om buiten te
       zijn, maar zet me dus niet direct in de zon.
-  - title: Waarom zijn mijn bekers rood?
+  - title: Waarom zijn jouw bekers rood?
     content: >-
       Ik ben een echte Casanova. Met de rode kleur van mijn bekers lok ik
       insecten. Hoe feller de kleur van mijn bekers, hoe meer honger ik heb!
